@@ -1,4 +1,8 @@
-.env
-package-lock.json
-package.json
-yarn.lock
+E:\Tracker-Expense\package-lock.json
+E:\Tracker-Expense\package.json
+E:\Tracker-Expense\yarn.lock
+E:\Tracker-Expense\server\.env
+server/package-lock.json
+E:\Tracker-Expense\server\package.json
+E:\Tracker-Expense\server\node_modules
+E:\Tracker-Expense\node_modules
