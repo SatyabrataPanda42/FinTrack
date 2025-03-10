@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect,useCallback } from "react";
 import ExpenseListTable from './_components/ExpenseListTable'
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_URL ="https://fintrack-u5iw.onrender.com";
 
 function page() {
        const [totalExpense, setTotalExpense] = useState(0);
