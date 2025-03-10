@@ -18,7 +18,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "../../../../../components/ui/alert-dialog";
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_URL = "https://fintrack-u5iw.onrender.com";
 
 function IncomeDetails() {
   const params = useParams();
