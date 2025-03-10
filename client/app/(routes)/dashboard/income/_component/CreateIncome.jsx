@@ -44,7 +44,7 @@ function CreateIncome({refreshData}) {
         return;
       }
   
-      const response = await fetch("http://localhost:5000/api/income", {
+      const response = await fetch("https://fintrack-u5iw.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
