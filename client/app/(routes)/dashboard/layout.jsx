@@ -1,19 +1,26 @@
-"use client"
-import React from 'react'
-import SideNav from './_component/SideNav'
-import DashboardHeader from './_component/DashboardHeader'
-function DashboardLayout({ children }) {
-  return (
-    <div> 
-        <div className='fixed md:w-64 hidden md:block shadow-md'>
-            <SideNav />
-        </div>
-        <div className='md:ml-64'>
+"use client";
+import React, { useState } from "react";
+import SideNav from "./_component/SideNav";
+import DashboardHeader from "./_component/DashboardHeader";
 
-        {children}
+function DashboardLayout({ children }) {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    return (
+        <div className="flex">
+            {/* Sidebar with Close Button */}
+            <SideNav isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
+
+            {/* Main Content */}
+            <div className="flex flex-col flex-1 md:ml-64">
+                {/* Header with Menu Button */}
+                <DashboardHeader onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
+
+                {/* Page Content */}
+                <div className="p-4">{children}</div>
+            </div>
         </div>
-    </div>
-  )
+    );
 }
 
-export default DashboardLayout
+export default DashboardLayout;

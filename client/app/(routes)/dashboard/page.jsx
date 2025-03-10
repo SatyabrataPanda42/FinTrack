@@ -1,16 +1,16 @@
 "use client";
 import React, { useState, useEffect,useCallback } from "react";
 import CardInfo from "../dashboard/_component/CardInfo"
-
 const API_URL = "https://fintrack-u5iw.onrender.com/api";
-
 import BarchartDashboard from "../dashboard/_component/BarchartDashboard"
 import IncomeItem from "./income/_component/IncomeItem";
 import ExpenseListTable from "./expenses/_components/ExpenseListTable";
+import DashboardHeader from "./_component/DashboardHeader";
 function Dashboard() {
     const [user, setUser] = useState(null);
     const [totalExpense, setTotalExpense] = useState(0);
     const [expensesList, setExpensesList] = useState([]);
+    
 
 
 

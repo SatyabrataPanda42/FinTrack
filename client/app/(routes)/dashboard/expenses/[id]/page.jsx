@@ -90,7 +90,6 @@ function IncomeDetails() {
 
       if (!deleteExpensesResponse.ok) {
         console.error("Failed to delete expenses before deleting Income.");
-        alert("Error deleting expenses. Income was not deleted.");
         return;
       }
 

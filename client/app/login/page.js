@@ -16,7 +16,7 @@ export default function LoginPage() {
         className="absolute inset-0 h-full w-full object-cover opacity-80"
       />
 
-      <div className="hidden lg:relative lg:block lg:p-12">
+<div className="hidden sm:block lg:relative lg:block lg:p-12">
         <a className="block text-white" href="#">
           <span className="sr-only">Home</span>
           <svg
@@ -66,7 +66,7 @@ export default function LoginPage() {
           </a>
 
           <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-            Welcome to Squid 🦑
+            Welcome to FinTrack🦑
           </h1>
 
           <p className="mt-4 leading-relaxed text-gray-500">
