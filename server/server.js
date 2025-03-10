@@ -15,7 +15,11 @@ app.use(cors());
 mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.error("MongoDB Error:", err));
-
+app.get("/",(req,res)=>{
+  res.json("hello");
+}
+  
+)
 // Routes
 app.use("/api/users", userRoutes); // Use your user routes
 app.use("/api/expenses",expenseRoute);
