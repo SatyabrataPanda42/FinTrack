@@ -2,7 +2,7 @@
 import React, { useState, useEffect,useCallback } from "react";
 import CardInfo from "../dashboard/_component/CardInfo"
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://fintrack-u5iw.onrender.com/api";
+const API_URL = "https://fintrack-u5iw.onrender.com/api";
 
 import BarchartDashboard from "../dashboard/_component/BarchartDashboard"
 import IncomeItem from "./income/_component/IncomeItem";
