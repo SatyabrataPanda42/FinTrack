@@ -2,9 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const userRoutes = require("../src/routes/users/usersroute"); // Ensure correct path
-const expenseRoute = require("./routes/expenses/expenseRoute");
-const incomeRoute = require("./routes/income/incomeRoute");
+const userRoutes = require("./src/routes/users/usersroute"); // Ensure correct path
+const expenseRoute = require("./src/routes/expenses/expenseRoute");
+const incomeRoute = require("./src/routes/income/incomeRoute");
 const app = express();
 const PORT = process.env.PORT || 5000;
 // Middleware

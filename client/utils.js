@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://fintrack-u5iw.onrender.com/api";
 
 
 export const signupUser = async (userData) => {
@@ -105,7 +105,7 @@ const fetchTotalIncome = async () => {
         throw new Error("No authentication token found. Please log in.");
       }
   
-      const response = await fetch("http://localhost:5000/api/income", {
+      const response = await fetch("https://fintrack-u5iw.onrender.com/api/income", {
         method: "GET",
         headers: {
           "Authorization": `Bearer ${token}`, // ✅ Use the stored token

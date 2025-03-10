@@ -16,7 +16,7 @@ import {
 } from "../../../../../components/ui/dialog";
 import { toast } from "sonner";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://fintrack-u5iw.onrender.com/api";
 
 function EditIncome({ income, refreshData }) {
     const [title, setTitle] = useState("");

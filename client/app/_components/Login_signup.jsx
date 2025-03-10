@@ -28,7 +28,7 @@ function Login_signup() {
       : formData;
 
     try {
-      const response = await fetch(`http://localhost:5000/api/users/${endpoint}`, {
+      const response = await fetch(`https://fintrack-u5iw.onrender.com/api/users/${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(requestData),

@@ -16,7 +16,7 @@ function ExpenseListTable({ expensesList, setExpensesList, refreshData }) {
     try {
         console.log("Sending DELETE request for:", expenseId);
 
-        const response = await fetch(`http://localhost:5000/api/expenses/${expenseId}`, {
+        const response = await fetch(`https://fintrack-u5iw.onrender.com/api/expenses/${expenseId}`, {
             method: "DELETE",
             headers: {
                 Authorization: `Bearer ${token}`,
